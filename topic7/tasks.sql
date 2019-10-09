@@ -18,5 +18,5 @@ from products p inner join catalogs c on p.catalog_id = c.id;
 select
 	f.[id]
 	,(select name fromm cities where label = F.[from]) as [from]
-	,(select name fromm cities where label = F.[to]) as [from]
+	,(select name fromm cities where label = F.[to]) as [to]
 from flights F
