@@ -2,3 +2,12 @@
 При помощи базы данных Redis решите задачу поиска имени пользователя по электронному адресу и наоборот, поиск электронного адреса пользователя по его имени.
 
 РЕШЕНИЕ:
+--  1 через hash
+hmset email max@mail.ru max alex@mail.ru alex
+hmset user max max@mail.ru alex alex@mail.ru
+
+hget user max
+hget user alex
+
+hget email max@mail.ru
+
