@@ -1,5 +1,5 @@
-База данных хранит геологическую информацию о месторождении рудного золота.
-Структура таблиц представлена следующим образом. Отступы показывают иерархию родительско-дочерних отношений (везде 1 ко многим).
+The database stores geological information about the ore gold deposit.
+The table structure is presented as follows. The indentation shows the hierarchy of parent-child relationships (everywhere 1 to many).
 
 	PROJECT
 		SITE
@@ -18,16 +18,16 @@
 		LKP_CODE
 		
 
-LKP_CATEGORY и LKP_CODE хранят справочные коды отдельных категорий данных (тип скважины, тип породы и т.п.)
-Данные коды используются в таблицах БД.
+LKP_CATEGORY and LKP_CODE store reference codes for individual data categories (well type, rock type, etc.)
+These codes are used in database tables.
 
-PROJECT - месторождения/участки
-SITE - скважины
-SITE_SURVEY - координаты устья скважины
-LITHOLOGY - геологическое описание интервалов скважины
-SAMPLE - полевые геологические пробы, отобранные при бурении скважины
-DESPATCH - реестр отправленных проб в лабораторию на анализ содержаний
-DESPATCH_DETAIL - параметры запрошенных анализов в отправке
-DESPATCH_SAMPLE - перечень проб, включенных в отправку
-RECEIPT - протокол лаборатории о выполненных анализах проб
-RESULT - содержания по каждой пробе из реестра отправки
+PROJECT - project/area
+SITE - wells (drillholes)
+SITE_SURVEY - collar (coordinates of drillholes)
+LITHOLOGY - geological description of drillhole interval
+SAMPLE - core samples collected during drillnig
+DESPATCH - fact of despatch of samples to the laboratory
+DESPATCH_DETAIL - despatch's details
+DESPATCH_SAMPLE - samples from despatch
+RECEIPT - fact of assay lab file receipt
+RESULT - assay data
