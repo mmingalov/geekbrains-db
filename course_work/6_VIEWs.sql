@@ -1,6 +1,6 @@
 use geodata;
 
--- Получим координаты скважин по последнему актуальному замеру
+-- gettting the coordinates of the wells according to the last actual measurement
 create view BEST_SITE_SUREY
 as
 
